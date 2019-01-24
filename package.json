@@ -1,0 +1,25 @@
+{
+  "name": "TinyDo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app/index.js",
+  "scripts": {
+    "dev": "electron app",
+    "parcel": "parcel watch source/index.html --out-dir=app/static --public-url=./ --no-hmr",
+    "build": "parcel build source/index.html --out-dir=app/static --public-url=./ && electron-builder app --mac"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^4.0.2",
+    "electron-builder": "^20.38.5",
+    "parcel-bundler": "^1.11.0",
+    "sass": "^1.16.1",
+    "react": "^16.8.0-alpha.1",
+    "react-dom": "^16.8.0-alpha.1"
+  },
+  "build": {
+    "icon": "./app/app-icon.png"
+  }
+}
