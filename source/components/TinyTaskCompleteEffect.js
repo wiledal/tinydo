@@ -48,6 +48,7 @@ export function TinyTaskCompleteEffect (props) {
     }
 
     resize()
+    window.addEventListener('resize', resize)
 
     function update () {
       if (emojis.length) {
